@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> unit 4 </title>
+    <style>
+        .blok{
+            display: block;
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .inline{
+            display: inline;
+        }
+        p{
+            font-size: 50px;
+        }
+        .margin{
+            border: 5px solid red;
+        }
+        .padding {
+            border: 5px solid red;
+            padding: 25px;
+        }
+        img{
+            width: 200px;
+            filter: blur(1px) grayscale(80%);
+            transition: width 10s;
+        }
+        img:hover{
+            width: 1000px;
+        }
+        .animation:hover{
+            animation: bg-color 2s forwards ;
+        }
+        .animation:active{
+            animation: bg-color 10s forwards
+        }
+        @keyframes bg-color {
+            from{
+                background-color: aqua;
+            }
+            to {
+                background-color: blue;
+            }
+        }
+        @keyframes bg-color2 {
+            from{
+                background-color:gold;
+            }
+            to {
+                background-color:rgb(41, 212, 41);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraf margin animation">Перший параграф</p>
+    <p class="padding">Другий параграф</p>
+    <p class="inline">Третій параграф</p>
+    <p class="inline">Четвертий параграф</p>
+
+    <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+     
+    
+
+</body>
+</html>
